@@ -1,3 +1,23 @@
-<h1>Admin::Dashboard#show</h1>
+<h1 class="adminhead">Admin Dashboard</h1>
+
+
+
+<table class="table table-admin">
+      <thead>
+        <tr>
+          <th>No. Products</th>
+          <th>No. Categories</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td><%= link_to @products, :admin_products %></td>
+      <td><%= link_to @categories, :admin_categories%> </td>
+      </tr>
+      </tbody>
+    </table>
+
+
+
 
 <p>Find me in app/views/admin/dashboard/show.html.erb</p>
