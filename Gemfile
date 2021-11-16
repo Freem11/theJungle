@@ -44,10 +44,10 @@ group :development, :test do
   gem 'byebug'
   gem 'quiet_assets'
   gem 'dotenv-rails'
+  gem 'rspec-rails', '~> 3.5'
   gem 'capybara'
   gem 'poltergeist'
   gem 'database_cleaner'
-  gem 'rspec-rails', '~> 3.5'
 
 end
 
