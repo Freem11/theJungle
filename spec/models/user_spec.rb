@@ -148,6 +148,52 @@ RSpec.describe User, type: :model do
 
       expect(@session).to_not be_nil
     end
+
+    it "should reject if email is not good" do
+      @user = User.new(
+        first_name: "Test",
+        last_name: "Testington",
+        email: "test@test.com",
+        password: "heyo",
+        password_confirmation: "heyo"
+        )
+        @user.save
+
+        @session = User.authenticate_with_credentials("testy@test.com", "heyo")
+
+      expect(@session).to be_nil
+    end
+
+    it "should reject if password is not good" do
+      @user = User.new(
+        first_name: "Test",
+        last_name: "Testington",
+        email: "test@test.com",
+        password: "heyo",
+        password_confirmation: "heyo"
+        )
+        @user.save
+
+        @session = User.authenticate_with_credentials("test@test.com", "heyoa")
+
+      expect(@session).to be_nil
+    end
+
+    it "should reject if both are not good" do
+      @user = User.new(
+        first_name: "Test",
+        last_name: "Testington",
+        email: "test@test.com",
+        password: "heyo",
+        password_confirmation: "heyo"
+        )
+        @user.save
+
+        @session = User.authenticate_with_credentials("testy@test.com", "heyoa")
+
+      expect(@session).to be_nil
+    end
+ 
  
   end
 
