@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "ProductDetails", type: :feature , js: true do
+RSpec.feature "AddToCarts", type: :feature, js: true do
 
   # SETUP
   before :each do
@@ -22,11 +22,11 @@ RSpec.feature "ProductDetails", type: :feature , js: true do
 scenario "Click on a Product and visit its details page" do
   # ACT
   visit root_path
-  find('.products article:first-child').click_on('Details')
+  find('.products article:first-child').click_on('Add')
   # DEBUG 
   
   # VERIFY
-  expect(page).to have_css 'article.product-detail'
+  expect(page).to have_content 'My Cart (1)'
   save_screenshot
 
 end
