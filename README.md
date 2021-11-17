@@ -31,3 +31,16 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+
+## Final Product
+
+!["Main Page"](https://github.com/Freem11/theJungle/blob/master/public/Images/Products.png)
+
+!["Registration"](https://github.com/Freem11/theJungle/blob/master/public/Images/Register.png)
+
+!["Product Category"](https://github.com/Freem11/theJungle/blob/master/public/Images/Category.png)
+
+!["My Cart"](https://github.com/Freem11/theJungle/blob/master/public/Images/Cart.png)
+
+!["Admin Page"](https://github.com/Freem11/theJungle/blob/master/public/Images/Admin_Products.png)
