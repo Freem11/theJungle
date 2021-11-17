@@ -19,7 +19,7 @@ RSpec.feature "AddToCarts", type: :feature, js: true do
   end
 
 
-scenario "Click on a Product and visit its details page" do
+scenario "Click on a Product and adds to cart" do
   # ACT
   visit root_path
   find('.products article:first-child').click_on('Add')
